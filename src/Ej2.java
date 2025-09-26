@@ -4,7 +4,7 @@ public class Ej2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe un número del 1 al 10");
         int num= sc.nextInt();
-        if (num < 1 || num>10) {
+        if (num < 0 || num>10) {
             System.err.println("No es un número del 1 al 10");
             } else {
             for (int i = 1; i <= 10; i++) {
