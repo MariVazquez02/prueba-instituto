@@ -2,38 +2,36 @@ import java.util.Scanner;
 public class Ej3 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Escribe 3 números:");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-
-        if (a == 0){
-            System.out.println("Primer número fallido, intentalo de nuevo");
-            a = sc.nextInt();
-        }else if (a % 2 == 0){
-            System.out.println(a + " es par.");
+        System.out.println("A continuación, escriba 3 números: ");
+        int n1;
+        do {
+            System.out.println("Escriba el primer número");
+             n1 = sc.nextInt();
+        }while (n1 <=0 );
+        if (n1 % 2 == 0) {
+            System.out.println("Es par.");
         }else {
-            System.out.println(a + " es impar");
+            System.out.println( "Es impar");
         }
-
-        if (b == 0){
-            System.out.println("Segundo número fallido, intentalo de nuevo");
-            b = sc.nextInt();
-        }else if (a % 2 == 0){
-            System.out.println(b + " es par.");
+        int n2;
+        do {
+            System.out.println("Escriba el segundo número");
+            n2 = sc.nextInt();
+        }while (n2 <=0 );
+        if (n2 % 2 == 0) {
+            System.out.println("Es par.");
         }else {
-            System.out.println(b + " es impar");
+            System.out.println("Es impar");
         }
-
-        if (c == 0){
-            System.out.println("Tercer número fallido, intentalo de nuevo");
-            c = sc.nextInt();
-        }else if (a % 2 == 0){
-            System.out.println(c + " es par.");
+        int n3;
+        do {
+            System.out.println("Escriba el tercer número");
+            n3 = sc.nextInt();
+        }while (n3 <=0 );
+        if (n3 % 2 == 0) {
+            System.out.println("Es par.");
         }else {
-            System.out.println(c + " es impar");
+            System.out.println("Es impar");
         }
-
-
     }
 }
