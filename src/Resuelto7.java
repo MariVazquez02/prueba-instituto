@@ -10,7 +10,7 @@ public class Resuelto7 {
             numeros = sc.nextInt();
         }
         double operacion = 0;
-        for (int i = 1; i < numeros + 1; i++) {
+        for (int i = 1; i < numeros; i++) {
             System.out.println("dame el numero " + i);
             double num = sc.nextDouble();
             operacion += num;
