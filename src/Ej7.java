@@ -2,17 +2,21 @@ import java.util.Scanner;
 public class Ej7 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n1;
-        int cantidad=0;
-        int media=0;
-        do {
-            System.out.println("Escribe 3 numeros:");
-            System.out.println("Primer número");
-            n1 = sc.nextInt();
+        System.out.println("Escriba una cantidad de números");
+        int cantidad= sc.nextInt();
+        while ( cantidad <=0) {
+            System.out.println("Introducela de nuevo");
+            cantidad = sc.nextInt();
+        }
+        double sumanum=0;
+        double media=0;
+        for (int i = 1; i <= cantidad; i++) {
+            System.out.println("Escribe el numero" + i);
+            double num = sc.nextDouble();
+            sumanum+= num;
 
-
-        }while (cantidad >=4);
-        media = n1 /2;
-        System.out.println("La media es ");
+        }
+        media= sumanum/cantidad;
+        System.out.println("la media es" + media);
     }
 }
