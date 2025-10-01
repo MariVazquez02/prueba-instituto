@@ -6,13 +6,15 @@ public class Ej10 {
 
         do {
             System.out.println("introduce un numero positivo");
-            if ( num <0){
+            if ( num < 0){
                 System.out.println("El numeo debe ser positivo o 0");
 
             }
 
         }while (num < 0);
+
         int factorial= 1;
+
         for (int i = 1; i < num; i++) {
             factorial*=i;
         }
