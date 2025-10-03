@@ -23,8 +23,8 @@ public class Bol6 {
             }
         }
 
-        porcentajeA= (aprob* 100)/numAl;
-        porcentajeB= (suspen*100)/numAl;
+        porcentajeA= (double) (aprob* 100)/numAl;
+        porcentajeB= (double) (suspen*100)/numAl;
 
         System.out.println("Han aprobado " + aprob + " y han suspendido " + suspen + " alumnos." );
         System.out.println("Ha aprobado el " + porcentajeA + "% y ha suspendido el " + porcentajeB + " %");

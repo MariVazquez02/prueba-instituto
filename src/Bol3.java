@@ -9,7 +9,7 @@ public class Bol3 {
         num = sc.nextInt();
         numO=num;
 
-        while ( num > 0 ){
+        while ( num != 0 ){
             num = num/10;
             cifras++;
         }

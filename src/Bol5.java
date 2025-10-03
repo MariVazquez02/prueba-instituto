@@ -8,7 +8,7 @@ public class Bol5 {
 
         System.out.println("Introduce un numero primo");
         num = sc.nextInt();
-
+// si el numero es par no va a ser primo por lo que sera mas facil de encontrar
         for (int i = 1; i <=num ; i++) {
             if(num % i ==0){
                 divisores++;
